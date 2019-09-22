@@ -1,0 +1,16 @@
+<form [formGroup]="messageForm" (ngSubmit)="saveMessage(messageForm.value)">
+
+  <ul class="form-style-1">
+    <li>
+    <label for="name">Name</label>
+    <input id="name" type="text" formControlName="name">
+    </li>
+    <li>
+    <label for="body"> message</label>
+    <textarea name="body" id="body" class="field-long field-textarea" formControlName="body"></textarea>
+    </li>
+    <li>
+    <input type="submit" value="Submit"/>
+    </li>
+  </ul>
+</form>
